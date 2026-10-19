@@ -7,8 +7,9 @@ import {
 } from "lucide-react";
 import "./App.css";
 
-const API_URL = "https://student-management-system-npd9.onrender.com";
-
+const API_URL =
+  import.meta.env.VITE_API_URL ||
+  "https://student-management-system-npd9.onrender.com";
 const emptyForm = {
   name: "",
   email: "",
