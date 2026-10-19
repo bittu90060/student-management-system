@@ -1,91 +1,90 @@
 # Student Management System
 
-A full-stack Student Management System developed as part of my Full Stack Development Internship task at Auspify Technologies.
+A full-stack Student Management System built using React.js, Node.js, Express.js, and MongoDB. This project helps manage student records through a simple and responsive dashboard.
 
-## Project Overview
-This application helps manage student records through a simple and responsive dashboard.
+## Live Demo
+
+- **Frontend:** https://student-management-system-1-k36b.onrender.com/
+- **Backend API:** https://student-management-system-npd9.onrender.com/
+- **Students API:** https://student-management-system-npd9.onrender.com/api/students
 
 ## Features
-- Add new students
+
+- Add new student records
 - View student details
-- Update student records
-- Delete student records
-- Search students by name, ID, email, or phone
+- Edit and delete student records
+- Search students by name, email, phone, or ID
 - Filter students by class
 - Export student records to CSV
+- MongoDB database integration
+- Responsive dashboard interface
 
-## Technology Stack
+## Tech Stack
 
 **Frontend**
 - React.js
-- JavaScript
-- HTML5 and CSS3
 - Vite
+- JavaScript
+- CSS
 
 **Backend**
 - Node.js
 - Express.js
-- REST APIs
+- REST API
 
 **Database**
-- MongoDB Atlas
+- MongoDB
 - Mongoose
 
-## Project Structure
+**Tools & Deployment**
+- Git and GitHub
+- Render
 
-- `frontend/` — React user interface
-- `backend/` — Express server, student model, and API routes
+## Installation
 
-## Installation and Setup
+### 1. Clone the repository
 
-1. Clone the repository:
+```bash
+git clone https://github.com/bittu90060/student-management-system.git
+cd student-management-system
+```
 
-   ```bash
-   git clone https://github.com/bittu90060/student-management-system.git
-   ```
+### 2. Install backend dependencies
 
-2. Install frontend dependencies:
+```bash
+cd backend
+npm install
+```
 
-   ```bash
-   cd frontend
-   npm install
-   ```
+Create a `.env` file inside the `backend` folder:
 
-3. Install backend dependencies:
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+```
 
-   ```bash
-   cd ../backend
-   npm install
-   ```
+Start the backend:
 
-4. Create a `.env` file inside the `backend/` folder:
+```bash
+npm start
+```
 
-   ```env
-   PORT=5000
-   MONGO_URI=your_mongodb_connection_string
-   ```
+### 3. Install frontend dependencies
 
-5. Start the backend:
+Open another terminal:
 
-   ```bash
-   npm run dev
-   ```
-
-6. In another terminal, start the frontend:
-
-   ```bash
-   cd frontend
-   npm run dev
-   ```
-
-## Security
-Environment variables and database credentials should never be committed to GitHub.
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
 ## Author
-Bittu Kumar Kushwaha
+
+**Bittu Kumar Kushwaha**
 
 GitHub: https://github.com/bittu90060
 
-## Internship Task
-Task 2 — Student Management System  
-Auspify Technologies
+## License
+
+This project is available for learning and educational purposes.
